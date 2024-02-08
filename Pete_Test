@@ -1,0 +1,16 @@
+SELECT *
+FROM [StaticValuesDb].[dbo].[Campus]
+WHERE CampusId = 13839;
+
+UPDATE [StaticValuesDb].[dbo].[Campus]
+SET SchoolName = 'McAuley Catholic College',
+    CampusName = 'McAuley Catholic College',
+    CampusSuburbAndName = 'TUMUT - McAuley Catholic College',
+    SchoolSuburbAndName = 'TUMUT - McAuley Catholic College',
+    CompassSchoolURL = 'mcauleytumut-nsw.compass.education'
+WHERE CampusId = 13839
+      AND IsCampusOpen = 1;
+
+SELECT *
+FROM [StaticValuesDb].[dbo].[Campus]
+WHERE CampusId = 13839;
